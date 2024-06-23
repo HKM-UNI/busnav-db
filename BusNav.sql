@@ -30,8 +30,8 @@ CREATE TABLE
 CREATE TABLE
     bus_cooperative (
         id INT AUTO_INCREMENT PRIMARY KEY
-        , name VARCHAR(32) UNIQUE NOT NULL
-        , description VARCHAR(72)
+        , name VARCHAR(50) UNIQUE NOT NULL
+        , description VARCHAR(150)
     );
 
 CREATE TABLE

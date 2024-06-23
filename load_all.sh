@@ -15,8 +15,7 @@ password="$2"
 host=${3:-localhost}
 port=${4:-3306}
 database='busnav'
-# sql_dirs=('')
-declare -a sql_dirs=()
+sql_dirs=('data')
 
 if [[ -z ${user} || -z ${password} ]]; then
     echo '⚠️ You are logging in without credentials'
