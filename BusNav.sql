@@ -17,7 +17,8 @@ CREATE TABLE
         , average_time_minutes TINYINT UNSIGNED
         , start_terminal INT
         , end_terminal INT
-        , map_data_url varchar(150)
+        , route_forward_data_url varchar(150)
+        , route_backward_data_url varchar(150)
         , FOREIGN KEY (start_terminal)
             REFERENCES bus_stop(id)
             ON DELETE SET NULL
