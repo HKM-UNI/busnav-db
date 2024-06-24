@@ -6,22 +6,22 @@ INSERT INTO bus_stop
     )
 VALUES
     (
-        "El Seminario"
+        'El Seminario'
         , 12.14441
         , -86.30451
     ),
     (
-        "Mercado Mayoreo"
+        'Mercado Mayoreo'
         , 12.13498
         , -86.19466
     ),
     (
-        "Terminal 116"
+        'Terminal 116'
         , 12.11304
         , -86.20348
     ),
     (
-        "Parque Independencia"
+        'Parque Independencia'
         , 12.12313
         , -86.29696
     );
