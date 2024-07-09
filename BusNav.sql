@@ -26,7 +26,7 @@ CREATE TABLE
     bus_path (
         id INT AUTO_INCREMENT PRIMARY KEY
         , bus_id INT
-        , path MULTILINESTRING NOT NULL
+        , path LINESTRING NOT NULL
         , backward BIT NOT NULL DEFAULT 0
         , FOREIGN KEY (bus_id)
             REFERENCES bus(id)
@@ -37,7 +37,7 @@ CREATE TABLE
     bus_stop (
         id INT AUTO_INCREMENT PRIMARY KEY
         , bus_id INT
-        , name VARCHAR(32)
+        , name VARCHAR(64)
         , location POINT NOT NULL
         , FOREIGN KEY (bus_id)
             REFERENCES bus(id)
